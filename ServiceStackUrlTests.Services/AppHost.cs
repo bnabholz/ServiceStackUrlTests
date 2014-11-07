@@ -15,7 +15,10 @@ namespace ServiceStackUrlTests.Services
 
         public override void Configure(Funq.Container container)
         {
-            
+            SetConfig(new HostConfig
+            {
+                DebugMode = true,
+            });
         }
     }
 }
